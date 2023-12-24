@@ -1,6 +1,10 @@
 const fruits = ['banana', 'mela', 'pera', 'ciliegia', 'arancia', 'mandarino', 'cocomero', 'limone', 'fragola']
 
+console.table(fruits);
+
 fruits.push('pesca')
+
+console.table(fruits);
 
 let isFound = false;
 
