@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css' integrity='sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <label for="question">Quanti elementi desideri?</label>
-    <input type="text" id="question">
-    <p id="error-box"></p>
-    <button type="button" id="btn">Inizia</button>
+    <div class="container pt-5">
+
+        <div class="mb-3">
+            <label for="question" class="form-label">Quanti elementi desideri nella tua lista di numeri?</label>
+            <input type="number" class="form-control" id="question" >
+            <p id="error-box"></p>
+        </div>
+        <div class="mb-3">
+            <label for="question-numbers-to-show" class="form-label">Quanti elementi della tua lista vuoi vedere partendo dalla fine?</label>
+            <input type="number" class="form-control" id="question-numbers-to-show" >
+            <p id="error-box-numbers"></p>
+        </div>
+        <button class="btn btn-primary" type="button" id="btn">Inizia</button>
+        
+        <p id="result" class="pt-3"></p>
+    </div>
     
     <script src="js/main.js"></script>
 </body>
