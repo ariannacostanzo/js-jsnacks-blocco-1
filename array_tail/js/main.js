@@ -4,10 +4,12 @@ const questionlastNumbersElement = document.getElementById('question-numbers-to-
 const errorBoxTotalNumbers = document.getElementById('error-box');
 const errorBoxLastNumbers = document.getElementById('error-box-numbers')
 const result = document.getElementById('result');
-const numbers = []
+let numbers = []
 
 
 btn.addEventListener('click', function () {
+
+    numbers = []
     const number = parseInt(questionTotalNumbersElement.value);
     const numberToShow = parseInt(questionlastNumbersElement.value)
     const numberStamp = number - numberToShow 
@@ -70,3 +72,7 @@ btn.addEventListener('click', function () {
 
     
 });
+
+// marco
+
+// usare un Array.slice(-5); usando - parte dalla fine, se il numero è positivo parte dall'inizio
